@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
 
 :root {
-    --cor-de-fundo: #1E1E1E;
-    --verde: #6FFF57;
-    --branco: #FFFFFF;
-    --botao-ativo: #3A375E;
-    --botao-inativo: rgba(58, 55, 94, 0.5);
-    --texto-fundo: rgba(58, 55, 94, 0.3);
+    --cor-de-fundo: linear-gradient(#000000, rgba(60, 5, 105, 2.543));;
+    --verde: #23d4ae;
+    --branco: #ffffff;
+    --botao-ativo: #5e1a9e;
+    --botao-inativo: rgba(113, 82, 138, 0.5);
+    --texto-fundo: rgba(76, 48, 100, 0.3);
+    
 }
 
 body {
-    background-color: var(--cor-de-fundo);
+    background-image: var(--cor-de-fundo);
     color: var(--branco);
     font-family: 'Chakra Petch', sans-serif;
 }
@@ -29,7 +30,7 @@ body {
 .titulo-principal {
     text-align: left;
     width: 100%;
-    font-size: 32px;
+    font-size: 30px;
 }
 
 .titulo-principal span {
@@ -68,7 +69,7 @@ body {
 
 .abas-textos{
     background-color: var(--texto-fundo);
-    padding: 40px;
+    padding: 20px;
     border-radius: 0 0 40px 40px;
 }
 .aba-conteudo.ativo{
@@ -89,6 +90,30 @@ body {
     text-transform: uppercase;
 }
 
+.contador{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contador-digito{
+    padding: 0 16px;
+    text-align: center;
+    min-width: 100px;
+}
+
+.contador-digito-numero{
+    font-size: 80px;
+    margin: 0;
+
+}
+
+.contador-digito-texto{
+    color: var(--verde);
+    font-size: 20px;
+    margin: 0;
+
+}
+
 @media screen and (min-width: 768px) {
     .botoes {
         display: flex;
@@ -101,4 +126,21 @@ body {
     .botao:last-child {
         border-radius: 0 40px 0 0;
     }
+}
+
+.frase-do-carai{
+    text-align: center;
+    font-size: 30px;
+    color:#ffffff;
+    margin-bottom: 0px;
+    margin-top: 15px;
+    
+}
+
+.frase-do-carai2{
+    text-align: center;
+    font-size: 30px;
+    color:#ffffff;
+    margin-top: 0px;
+   
 }
